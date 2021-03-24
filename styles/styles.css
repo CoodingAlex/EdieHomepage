@@ -10,6 +10,10 @@ html {
 body {
   padding: 17px 13px;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -39,7 +43,7 @@ body {
   list-style: none;
   background-color: white;
   transition: 0.25s all;
-
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,4 +67,135 @@ body {
 }
 #menu__checkbox:checked ~ .header__menu {
   left: 0;
+}
+
+/*---- Hero ----*/
+.hero__title {
+  padding: 0 40px 0 20px;
+  margin-top: 48px;
+}
+
+.hero__title a {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2d9cdb;
+}
+
+.hero__title h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.hero__image {
+  margin-top: 15px;
+  width: 100%;
+}
+.hero__image img {
+  max-width: 348px;
+  border-radius: 18px;
+}
+
+.hero__content {
+  padding: 0 40px 0 20px;
+  margin-top: 20px;
+}
+
+.hero__content--title {
+  width: 70%;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.hero__content--description {
+  margin-top: 20px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.hero__form {
+  padding: 0 40px 0 20px;
+  margin-top: 30px;
+}
+.hero__form form {
+  position: relative;
+  display: flex;
+  align-content: center;
+  width: 100%;
+}
+
+.input__wrapper {
+  display: inline-flex;
+  flex-grow: 2;
+  flex-direction: column;
+  height: 60px;
+}
+
+.input__wrapper label {
+  margin-bottom: 5px;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828282;
+}
+#email__form {
+  height: 80%;
+  background: #f2f2f2;
+  border-radius: 12px;
+  border: none;
+  padding-left: 10px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  /* Gray 4 */
+  outline: none;
+  color: #bdbdbd;
+}
+
+#email__form::placeholder {
+  color: #bdbdbd;
+}
+.input__button {
+  position: absolute;
+  right: 1%;
+  bottom: 5%;
+  height: 70%;
+  width: 70px;
+  border-radius: 12px;
+  border: none;
+  background: #2d9cdb;
+  color: white;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
 }
